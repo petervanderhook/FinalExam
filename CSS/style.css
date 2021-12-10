@@ -1,4 +1,5 @@
 :root {
+  /*Light theme colors*/
   --navHeight:   80px;
   --yellow:      #F9C74F;
   --lightCoral:  #EF6E6B;
@@ -9,20 +10,19 @@
   --black:       #23262E;
   --blueGray:    #555B6E;
   --romanSilver: #757E95;
-}
 
-:root.dark-theme {
-  --yellow:      #927530;
-  --lightCoral:  #8b403f;
-  --apricot:     #927b6c;
-  --lightGreen:  #68807a;
-  --darkGreen:   #527A78;
-  --white:       #444343;
+  /*Dark theme colors*/
+  --dyellow:      #927530;
+  --dlightCoral:  #8b403f;
+  --dapricot:     #927b6c;
+  --dlightGreen:  #68807a;
+  --ddarkGreen:   #527A78;
+  --dwhite:       #444343;
   --black:       #23262E;
-  --blueGray:    #3a3d49;
-  --romanSilver: #515869;
-
+  --dblueGray:    #3a3d49;
+  --dromanSilver: #515869;
 }
+
 
 
 * {
@@ -32,16 +32,6 @@
   box-sizing: border-box;
 }
 .dark-theme {
-  --dyellow:      #927530;
-  --dlightCoral:  #8b403f;
-  --dapricot:     #927b6c;
-  --dlightGreen:  #68807a;
-  --ddarkGreen:   #527A78;
-  --dwhite:       #444343;
-  --dblack:       #23262E;
-  --dblueGray:    #3a3d49;
-  --dromanSilver: #515869;
-
   --navBg:          var(--dlightGreen);
   --navLinkHoverBg: var(--dwhite);
   --mainBg:         var(--dwhite);

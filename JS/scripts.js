@@ -2,14 +2,29 @@
 console.log('I run')
 modetoggle = document.querySelector("input.toggle")
 
-modetoggle.addEventListener("click", change_mode)
-
-function change_mode(evt) {
+modetoggle.addEventListener("click", function(evt) {
     console.log('im running')
-    document.classList.toggle("dark-theme")
+    if(document.body.className == 'light-theme') {
+        document.body.classList.replace('light-theme','dark-theme')
+    }
+    else {
+        document.body.classList.replace('dark-theme','light-theme')
+
+    }
+    
+})
+
+
+function toDarkMode() {
+    document.querySelector('.toggle:before')
+}
+
+function toLightMode() {
+    x = 0
 }
 
 
+/* Form Section (Outputs to console)*/
 let submit = document.querySelector('#frm-btn')
 
 submit.addEventListener('click', function(evt) {
