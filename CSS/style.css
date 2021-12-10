@@ -212,6 +212,8 @@ input[type=text]:focus {
 }
 
 
+/* Media Functions for devices with screenwidth <600px */
+
 @media(max-width:600px){
   body{
     width: 100vw;
